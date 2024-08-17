@@ -152,7 +152,7 @@ const Navbar: React.FC = () => {
               </ButtonGroup>
               <Button
                 variant="outlined"
-                href="/Erick-CV.pdf"
+                href="./Erick-CV.pdf"
                 download="Erick-CV.pdf"
                 sx={{
                   color: '#ffffff',
