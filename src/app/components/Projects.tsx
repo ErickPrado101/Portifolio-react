@@ -9,7 +9,7 @@ const projetos = [
     titulo: 'Plataforma Local de Gerenciamento de Documentos Digitais,
     descricao: 'Feito com Next.js, essa é uma plataforma de gerenciamento de documentos digitais (EDM), é um sistema baseado em no armazenamento e performance da sua máquina (quando intalado,pois a demo não  funciona on-line para poupar recursos) que permite armazenar, organizar, acessar e compartilhar documentos eletrônicos de forma segura e eficiente. Essa solução é amplamente utilizada por empresas e organizações para reduzir o uso de papel, melhorar a produtividade e garantir conformidade regulatória..',
     imagem: '/project1.jpg',
-    link: 'https://example.com/project1',
+    link: 'https://sdd-beta.vercel.app/',
   },
   {
     titulo: 'Painel de Mídias Sociais',
