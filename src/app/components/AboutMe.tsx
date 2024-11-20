@@ -83,7 +83,7 @@ const AboutMe = () => {
 
               {/* Gráfico de Clientes */}
               <div className="w-full sm:w-1/2 lg:w-1/3">
-                <h3 className="text-xl font-semibold text-white mb-6">Tipos de lientes(2023)</h3>
+                <h3 className="text-xl font-semibold text-white mb-6">Tipos de clientes(2023)</h3>
                 <ResponsiveContainer width="100%" height={300}>
                   <PieChart>
                     <Pie
