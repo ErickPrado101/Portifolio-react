@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const projetos = [
   {
-    titulo: 'Plataforma de E-commerce',
+    titulo: 'Plataforma Local de Gerenciamento de Documentos Digitais,
     descricao: 'Uma loja online completa construída com Next.js e integração com Stripe.',
     imagem: '/project1.jpg',
     link: 'https://example.com/project1',
