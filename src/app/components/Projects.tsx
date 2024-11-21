@@ -15,7 +15,7 @@ const projetos = [
     titulo: 'Plataforma de gerenciamento de vendas',
     descricao: 'Painel de análise para gestão de vendas e lucros dos vendedores, proporcionando dados atualizados para otimizar a performance e decisões estratégicas.',
     imagem: '/projetc2.png',
-    link: 'https://example.com/project2',
+    link: 'https://visor-ai.vercel.app',
   },
   {
     titulo: 'Feedtalk, rede social para sua empresa',
