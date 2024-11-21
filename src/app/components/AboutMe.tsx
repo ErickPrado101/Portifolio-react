@@ -36,7 +36,7 @@ const AboutMe = () => {
             {/* Texto sobre mim */}
             <div>
               <p className="text-gray-300 mb-4">
-              Sou desenvolvedor frontend com 3 anos de experiência, apaixonado por tecnologia, aprendizado contínuo e por interações colaborativas. Possuo sólida expertise em React, TypeScript e Next.js, sendo reconhecido por meu raciocínio lógico e por minha participação em diversos projetos de excelência. Minha marca registrada é a versatilidade e a lealdade no trabalho, qualidades que reforçam minha capacidade de agregar valor às equipes e aos projetos. Além disso, possuo uma carta de referência que atesta minhas competências e destaca meu potencial para contribuir de forma significativa com sua empresa.                     </p>
+              Sou desenvolvedor frontend com 2 anos de experiência, apaixonado por tecnologia, aprendizado contínuo e por interações colaborativas. Possuo sólida expertise em React, TypeScript e Next.js, sendo reconhecido por meu raciocínio lógico e por minha participação em diversos projetos de excelência. Minha marca registrada é a versatilidade e a lealdade no trabalho, qualidades que reforçam minha capacidade de agregar valor às equipes e aos projetos. Além disso, possuo uma carta de referência que atesta minhas competências e destaca meu potencial para contribuir de forma significativa com sua empresa.                     </p>
               <div className="mt-8">
                 <h3 className="text-xl font-semibold text-white mb-4">Habilidades</h3>
                 <div className="flex flex-wrap gap-2">
