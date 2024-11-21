@@ -6,8 +6,9 @@ import Image from 'next/image'
 
 const projetos = [
   {
-    titulo: 'Plataforma Local de Gerenciamento de Documentos Digitais',
-    descricao: ' Plataforma de gerenciamento de documentos digitais (EDM) desenvolvida com Next.js, projetada para armazenar, organizar, acessar e compartilhar documentos eletrônicos de forma segura e eficiente. Baseada no desempenho local da máquina, é ideal para empresas que buscam reduzir o uso de papel, aumentar a produtividade e assegurar conformidade regulatória. ',
+    titulo: 'Plataforma Local de Gerenciamento de Documentos Digitais(DEMO)',
+    descricao: ' Plataforma de gerenciamento de documentos digitais (EDM) desenvolvida com Next.js, projetada para armazenar, organizar, acessar e compartilhar documentos eletrônicos de forma segura e eficiente. Baseada no desempenho local da máquina, é ideal para empresas que buscam reduzir o uso de papel, aumentar a produtividade e assegurar conformidade regulatória.
+(ENTRE EM CONTATO PARA RECEBER O PROJETO TOTALMENTEFUNCIONAL NA SUA MÁQUINA)',
     imagem: '/project1.jpg',
     link: 'https://sdd-beta.vercel.app/',
   },
