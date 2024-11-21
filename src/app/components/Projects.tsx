@@ -7,21 +7,21 @@ import Image from 'next/image'
 const projetos = [
   {
     titulo: 'Plataforma Local de Gerenciamento de Documentos Digitais (DEMO)',
-    descricao: 'Plataforma Next.js para gerenciar documentos digitais localmente, focada em segurança, produtividade e redução de papel. Entre em contato para receber a versão totalmente funcional instalada em sua máquina.',
-    imagem: '/project1.jpg',
+    descricao: 'Plataforma em Next.js para gerenciar documentos locais com foco em segurança e produtividade.',
+    imagem: '/project1.png',
     link: 'https://sdd-beta.vercel.app/',
   },
   {
-    titulo: 'Painel de Mídias Sociais',
-    descricao: 'Painel de análise em tempo real para gestão de mídias sociais.',
-    imagem: '/project2.jpg',
+    titulo: 'Plataforma de gerenciamento de vendas',
+    descricao: 'Painel de análise para gestão de vendas e lucros dos vendedores, proporcionando dados atualizados para otimizar a performance e decisões estratégicas.',
+    imagem: '/projetc2.png',
     link: 'https://example.com/project2',
   },
   {
-    titulo: 'Chatbot com Inteligência Artificial',
-    descricao: 'Um chatbot inteligente utilizando processamento de linguagem natural.',
-    imagem: '/project3.jpg',
-    link: 'https://example.com/project3',
+    titulo: 'Feedtalk, rede social para sua empresa',
+    descricao: 'Feedtalk é a rede social corporativa que facilita o feedback interno, promovendo comunicação e engajamento entre os colaboradores.',
+    imagem: '/project3.png',
+    link: 'https://feedtalk-3mxp.vercel.app',
   },
 ]
 
