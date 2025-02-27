@@ -6,10 +6,10 @@ import Image from 'next/image'
 
 const projetos = [
   {
-    titulo: 'Plataforma Local de Gerenciamento de Documentos Digitais (DEMO)',
-    descricao: 'Plataforma em Next.js para gerenciar documentos locais com foco em segurança e produtividade.',
-    imagem: '/project1.png',
-    link: 'https://sdd-beta.vercel.app/',
+    titulo: 'e-commerce(demo)',
+    descricao: 'Plataforma em Next.js para vendas de produtos que simula a venda quanto acúmlo e troca de pontos por meio de serviços mais produtos.',
+    imagem: '/Captura de tela 2025-02-27 115456.png',
+    link: 'https://mvp-ecommerce-beryl.vercel.app',
   },
   {
     titulo: 'Plataforma de gerenciamento de vendas',
