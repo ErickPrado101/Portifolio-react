@@ -23,6 +23,12 @@ const projetos = [
     imagem: '/project3.png',
     link: 'https://feedtalk-3mxp.vercel.app',
   },
+  {
+    titulo: 'Foodtech, melhore seu restaurante',
+    descricao: 'Foodtech é a novo saas para o ramo alimentício, lucro totalmente seu e ajude total no seu negócio, promovendo otimização e usuabilidade.',
+    imagem: '/Capturar.PNG',
+    link: 'https://foodtech-sage.vercel.app',
+  },
 ]
 
 const Projetos = () => {
