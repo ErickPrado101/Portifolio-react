@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --background: #030305;
   --foreground: #f3f4f6;
@@ -26,6 +30,13 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
 }
 
 ::selection {
@@ -42,7 +53,36 @@ body {
     radial-gradient(900px 650px at 78% 22%, rgba(96, 165, 250, 0.10), transparent 55%),
     radial-gradient(1200px 750px at 50% 110%, rgba(37, 99, 235, 0.10), transparent 60%),
     radial-gradient(900px 520px at 60% 40%, rgba(0, 0, 0, 0.70), transparent 62%),
+    linear-gradient(180deg, transparent 0%, rgba(3, 3, 5, 0.55) 72%, rgba(3, 3, 5, 0.92) 100%),
     linear-gradient(180deg, #020203 0%, #030305 45%, #020203 100%);
+  background-attachment: fixed;
+}
+
+@keyframes forge-drift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-forge-animated {
+  background-size: 200% 200%;
+  animation: forge-drift 18s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .bg-forge-animated {
+    animation: none;
+  }
 }
 
 .text-metal {
@@ -53,10 +93,10 @@ body {
 }
 
 .card-glass {
-  background: var(--panel);
+  background: rgba(255, 255, 255, 0.06);
   border: 1px solid var(--panel-border);
   box-shadow: 0 24px 60px var(--shadow);
-  backdrop-filter: blur(10px);
+  backdrop-filter: saturate(160%) blur(14px);
 }
 
 .ring-accent {

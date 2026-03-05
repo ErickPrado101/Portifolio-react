@@ -9,13 +9,6 @@ const Hero = () => {
       className="relative flex min-h-[calc(100dvh-4rem)] flex-col items-center justify-center overflow-hidden py-16"
       style={{ paddingTop: '5rem' }} 
     >
-      {/* Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/40 to-black/40"></div>
-        <div className="absolute inset-0 bg-forge" />
-        <div className="absolute inset-0 bg-black/55" />
-      </div>
-
       {/* Content */}
       <div className="relative z-10 flex w-full max-w-4xl flex-col items-center px-4 text-center sm:px-8">
         {/* Heading */}

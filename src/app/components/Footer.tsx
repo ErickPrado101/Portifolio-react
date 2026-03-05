@@ -1,7 +1,7 @@
 const Rodape = () => {
     return (
-      <footer className="border-t border-white/10 bg-black/20 py-10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <footer className="border-t border-white/10 bg-transparent py-10">
+        <div className="w-full px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
             <div className="text-white/60 text-sm">
               © {new Date().getFullYear()} Érick Prado Gonçalves. Todos os direitos reservados.

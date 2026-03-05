@@ -39,7 +39,7 @@ const Projetos = () => {
 
   return (
     <section id="projects" ref={ref} className="py-16 md:py-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="w-full px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -69,7 +69,7 @@ const Projetos = () => {
                     height={300}
                     className="h-48 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
                   />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-blue-950/35 via-transparent to-transparent" />
                 </div>
 
                 <div className="p-6">
