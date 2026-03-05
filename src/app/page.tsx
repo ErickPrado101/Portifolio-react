@@ -8,9 +8,9 @@ import ParticlesBackground from './components/ParticlesBackground'
 
 export default function Home() {
   return (
-    <div className="bg-forge bg-forge-animated min-h-screen">
+    <div className="relative bg-forge bg-forge-animated min-h-screen">
       <ParticlesBackground />
-      <main>
+      <main className="relative z-10">
         <Navbar />
         <Hero />
         <AboutMe />

@@ -31,9 +31,9 @@ const AboutMe = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <div className="card-glass rounded-3xl p-6 md:p-10">
+          <div className="glass-surface rounded-3xl p-6 md:p-10">
             <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">Sobre Mim</h2>
-            <div className="mt-8 grid grid-cols-1 gap-10 md:grid-cols-2">
+            <div className="mt-8 space-y-10">
               <div>
                 <p className="text-white/70 leading-7">
                   Sou desenvolvedor frontend com 2 anos de experiência, apaixonado por tecnologia, aprendizado contínuo e por interações colaborativas. Possuo sólida expertise em React, TypeScript e Next.js, sendo reconhecido por meu raciocínio lógico e por minha participação em diversos projetos de excelência. Minha marca registrada é a versatilidade e a lealdade no trabalho, qualidades que reforçam minha capacidade de agregar valor às equipes e aos projetos. Além disso, possuo uma carta de referência que atesta minhas competências e destaca meu potencial para contribuir de forma significativa com sua empresa.
@@ -54,9 +54,8 @@ const AboutMe = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-                {/* Gráfico de Satisfação */}
-                <div className="card-glass w-full rounded-3xl p-6">
+              <div className="grid grid-cols-1 gap-10 sm:grid-cols-2">
+                <div>
                   <h3 className="text-base font-semibold tracking-[0.22em] text-white/55 md:text-xs">SATISFAÇÃO (2023)</h3>
                   <div className="mt-5 h-64 md:h-72">
                     <ResponsiveContainer width="100%" height="100%">
@@ -89,8 +88,7 @@ const AboutMe = () => {
                   </div>
                 </div>
 
-                {/* Gráfico de Clientes */}
-                <div className="card-glass w-full rounded-3xl p-6">
+                <div>
                   <h3 className="text-base font-semibold tracking-[0.22em] text-white/55 md:text-xs">CLIENTES (2023)</h3>
                   <div className="mt-5 h-64 md:h-72">
                     <ResponsiveContainer width="100%" height="100%">

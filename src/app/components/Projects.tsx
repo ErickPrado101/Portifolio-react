@@ -59,7 +59,7 @@ const Projetos = () => {
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="card-glass group overflow-hidden rounded-3xl transition hover:border-white/15"
+                className="glass-surface group overflow-hidden rounded-3xl transition"
               >
                 <div className="relative">
                   <Image

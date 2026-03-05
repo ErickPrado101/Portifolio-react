@@ -17,7 +17,7 @@ const Contato = () => {
                     initial={{ opacity: 0, y: 50 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 0.5 }}
-                    className="card-glass rounded-3xl p-7 text-center md:p-10"
+                    className="glass-surface rounded-3xl p-7 text-center md:p-10"
                 >
                     <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">Entre em Contato</h2>
                     <p className="mt-4 max-w-2xl mx-auto text-base leading-7 text-white/70">

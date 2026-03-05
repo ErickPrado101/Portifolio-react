@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-white/10 bg-white/[0.06] backdrop-blur supports-[backdrop-filter]:backdrop-blur supports-[backdrop-filter]:backdrop-saturate-150">
+    <nav className="sticky top-0 z-50 glass-surface border-b border-white/10">
       <div className="w-full px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">

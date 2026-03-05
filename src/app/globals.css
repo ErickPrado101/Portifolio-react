@@ -33,6 +33,14 @@ body {
   font-size: 17px;
 }
 
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(255, 255, 255, 0.10);
+  --glass-blur: 10px;
+  --glass-saturate: 150%;
+  --glass-shadow: 0 14px 36px rgba(0, 0, 0, 0.32);
+}
+
 @media (min-width: 768px) {
   body {
     font-size: 18px;
@@ -78,7 +86,7 @@ body {
 .particles-layer {
   position: fixed;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
   opacity: 0.85;
 }
@@ -91,6 +99,10 @@ body {
   .bg-forge-animated {
     animation: none;
   }
+
+  .card-glass::after {
+    animation: none;
+  }
 }
 
 .text-metal {
@@ -100,11 +112,26 @@ body {
   color: transparent;
 }
 
+.glass-surface {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: saturate(var(--glass-saturate)) blur(var(--glass-blur));
+  backdrop-filter: saturate(var(--glass-saturate)) blur(var(--glass-blur));
+}
+
+.glass-surface .glass-surface {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+}
+
 .card-glass {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--panel-border);
-  box-shadow: 0 24px 60px var(--shadow);
-  backdrop-filter: saturate(160%) blur(14px);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: saturate(var(--glass-saturate)) blur(var(--glass-blur));
+  backdrop-filter: saturate(var(--glass-saturate)) blur(var(--glass-blur));
 }
 
 .ring-accent {
