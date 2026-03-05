@@ -3,19 +3,62 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #030305;
+  --foreground: #f3f4f6;
+  --panel: rgba(255, 255, 255, 0.03);
+  --panel-border: rgba(255, 255, 255, 0.08);
+  --muted: rgba(255, 255, 255, 0.70);
+  --muted-weak: rgba(255, 255, 255, 0.60);
+  --accent: #2563eb;
+  --accent-strong: #3b82f6;
+  --shadow: rgba(0, 0, 0, 0.55);
+  --ring: rgba(59, 130, 246, 0.35);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #030305;
+    --foreground: #f3f4f6;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.22);
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.bg-forge {
+  background:
+    radial-gradient(1100px 700px at 18% 8%, rgba(59, 130, 246, 0.14), transparent 58%),
+    radial-gradient(900px 650px at 78% 22%, rgba(96, 165, 250, 0.10), transparent 55%),
+    radial-gradient(1200px 750px at 50% 110%, rgba(37, 99, 235, 0.10), transparent 60%),
+    radial-gradient(900px 520px at 60% 40%, rgba(0, 0, 0, 0.70), transparent 62%),
+    linear-gradient(180deg, #020203 0%, #030305 45%, #020203 100%);
+}
+
+.text-metal {
+  background: linear-gradient(180deg, #ffffff 0%, #d6dae2 45%, #8d93a0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-glass {
+  background: var(--panel);
+  border: 1px solid var(--panel-border);
+  box-shadow: 0 24px 60px var(--shadow);
+  backdrop-filter: blur(10px);
+}
+
+.ring-accent {
+  box-shadow: 0 0 0 1px rgba(59, 130, 246, 0.22), 0 0 0 7px rgba(59, 130, 246, 0.06);
 }

@@ -7,24 +7,26 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-blur-sm">
+    <nav className="sticky top-0 z-50 border-b border-white/10 bg-black/30 backdrop-blur">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="#" className="text-blue-500 text-2xl font-bold">Portfolio de Érick Prado</a>
+            <a href="#" className="text-base font-semibold tracking-wide text-white">
+              Portfolio de <span className="text-blue-500">Érick Prado</span>
+            </a>
           </div>
           <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
-              <a href="#" className="text-gray-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Início</a>
-              <a href="#about" className="text-gray-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Sobre</a>
-              <a href="#projects" className="text-gray-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Projetos</a>
-              <a href="#contact" className="text-gray-300 hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium">Contato</a>
+            <div className="ml-10 flex items-baseline space-x-6 text-sm text-white/80">
+              <a href="#" className="transition hover:text-white">Início</a>
+              <a href="#about" className="transition hover:text-white">Sobre</a>
+              <a href="#projects" className="transition hover:text-white">Projetos</a>
+              <a href="#contact" className="transition hover:text-white">Contato</a>
             </div>
           </div>
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              className="inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 p-2 text-white/70 transition hover:bg-white/10 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500/30"
             >
               <span className="sr-only">Abrir menu</span>
               {!isOpen ? (
@@ -47,11 +49,11 @@ const Navbar = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <a href="#" className="text-gray-300 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Início</a>
-            <a href="#about" className="text-gray-300 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Sobre</a>
-            <a href="#projects" className="text-gray-300 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Projetos</a>
-            <a href="#contact" className="text-gray-300 hover:text-blue-500 block px-3 py-2 rounded-md text-base font-medium">Contato</a>
+          <div className="mx-4 mb-4 mt-3 rounded-2xl border border-white/10 bg-black/30 p-2 backdrop-blur">
+            <a href="#" className="block rounded-xl px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-white">Início</a>
+            <a href="#about" className="block rounded-xl px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-white">Sobre</a>
+            <a href="#projects" className="block rounded-xl px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-white">Projetos</a>
+            <a href="#contact" className="block rounded-xl px-4 py-3 text-sm font-medium text-white/80 transition hover:bg-white/5 hover:text-white">Contato</a>
           </div>
         </motion.div>
       )}

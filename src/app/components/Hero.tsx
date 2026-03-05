@@ -6,31 +6,26 @@ import Image from 'next/image';
 const Hero = () => {
   return (
     <section
-      className="relative h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative flex min-h-[calc(100dvh-4rem)] flex-col items-center justify-center overflow-hidden py-16"
       style={{ paddingTop: '5rem' }} 
     >
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-900 to-gray-900 opacity-90"></div>
-        <Image
-          src="/hero-bg.jpg"
-          alt="Hero background"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
-        />
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-950/40 to-black/40"></div>
+        <div className="absolute inset-0 bg-forge" />
+        <div className="absolute inset-0 bg-black/55" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center text-center px-4 sm:px-8">
+      <div className="relative z-10 flex w-full max-w-4xl flex-col items-center px-4 text-center sm:px-8">
         {/* Heading */}
         <motion.h1
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4"
+          className="text-balance text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl md:text-6xl"
         >
-          Desenvolvedor Web
+          Desenvolvedor <span className="text-metal">Web</span>
         </motion.h1>
 
         {/* Subtitle */}
@@ -38,7 +33,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-6 max-w-2xl"
+          className="mt-5 max-w-2xl text-pretty text-base leading-7 text-white/70 sm:text-lg md:text-xl"
         >
           Desenvolvendo projetos com inovação e qualidade
         </motion.p>
@@ -48,11 +43,11 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.4 }}
-          className="flex flex-wrap justify-center gap-4"
+          className="mt-8 flex flex-col flex-wrap justify-center gap-3 sm:flex-row sm:items-center"
         >
           <a
             href="#about"
-            className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105"
+            className="inline-flex h-12 items-center justify-center rounded-full bg-blue-600 px-6 text-sm font-semibold text-white shadow-[0_16px_50px_rgba(37,99,235,0.35)] transition hover:bg-blue-500"
           >
             Sobre mim
           </a>
@@ -60,7 +55,7 @@ const Hero = () => {
            href="/Erick-CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-transparent hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 ease-in-out transform hover:scale-105 border-2 border-white hover:border-transparent"
+            className="inline-flex h-12 items-center justify-center rounded-full border border-white/15 bg-white/5 px-6 text-sm font-semibold text-white transition hover:border-white/30 hover:bg-white/10"
           >
             Ver currículo
           </a>
@@ -72,15 +67,17 @@ const Hero = () => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className="relative z-10 mt-8 sm:mt-12"
+        className="relative z-10 mt-10 sm:mt-12"
       >
-        <Image
-          src="/foto.jpeg"
-          alt="Developer profile picture"
-          width={150}
-          height={150}
-          className="rounded-full border-4 border-blue-500 shadow-lg"
-        />
+        <div className="ring-accent rounded-full">
+          <Image
+            src="/foto.jpeg"
+            alt="Developer profile picture"
+            width={150}
+            height={150}
+            className="rounded-full border border-white/10 shadow-[0_24px_60px_rgba(0,0,0,0.55)]"
+          />
+        </div>
       </motion.div>
     </section>
   );

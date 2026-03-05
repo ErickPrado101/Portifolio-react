@@ -38,38 +38,48 @@ const Projetos = () => {
   })
 
   return (
-    <section id="projects" ref={ref} className="py-20 bg-gray-900">
+    <section id="projects" ref={ref} className="py-16 md:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl font-bold text-center text-white mb-12">Projetos em Destaque</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl font-semibold tracking-tight text-white md:text-4xl">Projetos em Destaque</h2>
+            <p className="mt-3 text-base leading-6 text-white/65 md:text-sm">
+              Alguns projetos recentes com foco em UX, performance e entrega.
+            </p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {projetos.map((projeto, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
-                className="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300"
+                className="card-glass group overflow-hidden rounded-3xl transition hover:border-white/15"
               >
-                <Image
-                  src={projeto.imagem}
-                  alt={projeto.titulo}
-                  width={500}
-                  height={300}
-                  className="w-full h-48 object-cover"
-                />
+                <div className="relative">
+                  <Image
+                    src={projeto.imagem}
+                    alt={projeto.titulo}
+                    width={500}
+                    height={300}
+                    className="h-48 w-full object-cover transition duration-300 group-hover:scale-[1.02]"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+                </div>
+
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold text-white mb-2">{projeto.titulo}</h3>
-                  <p className="text-gray-400 mb-4">{projeto.descricao}</p>
+                  <h3 className="text-lg font-semibold text-white">{projeto.titulo}</h3>
+                  <p className="mt-2 text-sm leading-6 text-white/65">{projeto.descricao}</p>
                   <a
                     href={projeto.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out"
+                    className="mt-5 inline-flex h-11 items-center justify-center rounded-full bg-blue-600 px-5 text-sm font-semibold text-white shadow-[0_16px_50px_rgba(37,99,235,0.25)] transition hover:bg-blue-500"
                   >
                     Ver Projeto
                   </a>
