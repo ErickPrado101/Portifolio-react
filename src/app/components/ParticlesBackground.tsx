@@ -82,9 +82,6 @@ const ParticlesBackground = () => {
       const linkDist = 120
       const linkDist2 = linkDist * linkDist
 
-      const pointerDist = 170
-      const pointerDist2 = pointerDist * pointerDist
-
       const repelRadius = 90
       const repelRadius2 = repelRadius * repelRadius
       const repelStrength = 1.15
