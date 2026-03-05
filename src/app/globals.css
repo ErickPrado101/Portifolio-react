@@ -75,6 +75,14 @@ body {
   animation: forge-drift 18s ease-in-out infinite;
 }
 
+.particles-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
